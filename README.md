@@ -8,11 +8,12 @@ The goal of this project is to raise awareness of the level of carbon emissions 
 
 A “nice-to-have” bit of additional functionality would include a comparison to a more relatable form of carbon emission. An example social media post might read: “Warren Buffet just put 45 tons of CO2 into the atmosphere flying from Omaha to Nashville. That’s the equivalent of driving from Los Angeles to New York 3 times.”
 
-##Docker Instructions
-In the root directory, run `docker build .`
+## Docker Instructions
 
-Then run `docker images` and copy the ID of the image you've just created
+In the root directory, run `docker build .`.
 
-Finally, run `docker run -it --mount type=bind,source=${PWD},target=/app 60cc65c91759 bash`
+Then run `docker images` and copy the ID of the image you've just created.
+
+Finally, run `docker run -it --mount type=bind,source=${PWD},target=/app 60cc65c91759 bash` to create the container.
 
 This will bind your local /app directory with the /app directory in the container.
