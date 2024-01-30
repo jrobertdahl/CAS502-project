@@ -14,6 +14,6 @@ In the root directory, run `docker build .`.
 
 Then run `docker images` and copy the ID of the image you've just created.
 
-Finally, run `docker run -it --mount type=bind,source=${PWD},target=/app 60cc65c91759 bash` to create the container.
+Finally, run `docker run -it --mount type=bind,source=${PWD},target=/project IMAGEID_GOES_HERE bash` to create the container.
 
 This will bind your local /app directory with the /app directory in the container.
