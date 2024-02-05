@@ -9,3 +9,11 @@ def tree_comparison(jet_emission):
   tree_output = f"It will take {trees_needed} trees approximately 1 year to remove this CO2 from the atmosphere."
   return tree_output
   
+
+
+#driving from LA to NY comparison, 2200lbs CO2 
+#Assumptions:
+  #Compact Car
+  #using E10 fuel
+  #3.396 km between LA and NY
+
