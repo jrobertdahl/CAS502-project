@@ -26,3 +26,8 @@ def LA_NY_drive_comparison(jet_emission):
 
 #average person emission calculations
 # average american emits 16 tons every year = 14.5 mt
+def average_american_emissions_comparison(jet_emission):
+  american_emissions_mt = 14.5
+  years_needed = jet_emission/american_emissions_mt
+  years_output = f"It would take an average American {years_needed} years to emit the same amount."
+  return years_output
