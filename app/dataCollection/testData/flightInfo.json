@@ -1,0 +1,18 @@
+{
+  "testData_1": {
+    "name": "Bill Gates",
+    "milesTraveled": 260
+  },
+  "testData_2": {
+    "name": "Elon Musk",
+    "milesTraveled": 480
+  },
+  "testData_3": {
+    "name": "Dan Gilbert",
+    "milesTraveled": 600
+  },
+  "testData_4": {
+    "name": "Miriam Adelson",
+    "milesTraveled": 100
+  }
+}
