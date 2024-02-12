@@ -1,18 +1,18 @@
 {
   "test_data_1": {
     "name": "Bill Gates",
-    "miles_traveled": 260
+    "km_traveled": 418
   },
   "test_data_2": {
     "name": "Elon Musk",
-    "miles_traveled": 480
+    "km_traveled": 772
   },
   "test_data_3": {
     "name": "Dan Gilbert",
-    "miles_traveled": 600
+    "km_traveled": 965
   },
   "test_data_4": {
     "name": "Miriam Adelson",
-    "milesTrmiles_traveledaveled": 100
+    "km_traveled": 160
   }
 }
