@@ -4,7 +4,7 @@ from posting.postToX import post_to_x
 
 name = ""
 km_traveled = 0
-tons_co2_emitted = 0
+metric_tons_co2_emitted = 0
 base_post_text = ""
 comparison_text = ""
 
@@ -19,7 +19,7 @@ with open('dataCollection/testData/flightInfo.json') as json_file:
 comparison_text = get_emissions_comparison_text(1000)
 
 # build the full post text
-base_post_text = f'TEST - {name} just flew {km_traveled} km in their private jet, emitting {tons_co2_emitted} tons of CO₂ into the atmosphere. ' + comparison_text
+base_post_text = f'TEST - {name} just flew {km_traveled} km in their private jet, emitting {metric_tons_co2_emitted} metric tons of CO₂ into the atmosphere. ' + comparison_text
 
 # post it to x
 post_to_x(base_post_text)
