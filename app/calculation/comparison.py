@@ -1,8 +1,8 @@
 import random
-def emissions_comparison_calculation(jet_emission):
-  comparisons = [tree_comparison, LA_NY_drive_comparison, average_american_emissions_comparison]
+def get_emissions_comparison_text(jet_emission):
+  comparisons = ['tree_comparison', 'LA_NY_drive_comparison', 'average_american_emissions_comparison']
   selection = random.choice(comparisons)
-  if selection == tree_comparison:
+  if selection == 'tree_comparison':
     #calculating how many trees are needed to absorb jet_emission
     #from arbor day foundation: a mature tree absorbs 48 lbs CO2 per year = 0.02 mt CO2
    
@@ -13,7 +13,7 @@ def emissions_comparison_calculation(jet_emission):
     
     return tree_output
   
-  elif selection == LA_NY_drive_comparison:
+  elif selection == 'LA_NY_drive_comparison':
     #driving from LA to NY comparison, 2200lbs CO2 = 0.997 mt
     #Assumptions: compact car, using E10 fuel, there are 3,396 km between LA and NY
     
