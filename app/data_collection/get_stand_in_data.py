@@ -3,14 +3,14 @@ from random import randrange
 
 # this bit of functionality pulls in stand-in data until we build out the web scraping and/or API stuff
 
-def select_data_value():
-    if (len(sys.argv) > 1):
+def select_data_value(arg_list):
+    if (len(arg_list) > 1):
         # this should be refactored obviously
-        if sys.argv in ['test_data_1','test_data_2','test_data_3','test_data_4']:
-            return sys.argv
+        if arg_list[1] in ['test_data_1','test_data_2','test_data_3','test_data_4']:
+            return arg_list[1]
         else:
             print("Please pass a valid test data selection.")
-            sys.exit()
+            # sys.exit()
     else:
         return "test_data_" + str(randrange(1,4)) 
 
