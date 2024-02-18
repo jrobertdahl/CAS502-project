@@ -5,7 +5,12 @@ from random import randrange
 
 def select_data_value():
     if (len(sys.argv) > 1):
-        return sys.argv
+        # this should be refactored obviously
+        if sys.argv in ['test_data_1','test_data_2','test_data_3','test_data_4']:
+            return sys.argv
+        else:
+            print("Please pass a valid test data selection.")
+            sys.exit()
     else:
         return "test_data_" + str(randrange(1,4)) 
 
