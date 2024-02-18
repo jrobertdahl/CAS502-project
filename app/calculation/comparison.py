@@ -1,4 +1,5 @@
 import random
+
 def get_emissions_comparison_text(jet_emission):
   comparisons = ['tree_comparison', 'LA_NY_drive_comparison', 'average_american_emissions_comparison']
   selection = random.choice(comparisons)
