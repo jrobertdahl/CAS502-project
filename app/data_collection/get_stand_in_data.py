@@ -10,7 +10,8 @@ def select_data_value(arg_list):
             return arg_list[1]
         else:
             print("Please pass a valid test data selection.")
-            # sys.exit()
+            if (len(arg_list) < 3 and 'test' not in arg_list):
+                sys.exit()
     else:
         return "test_data_" + str(randrange(1,4)) 
 

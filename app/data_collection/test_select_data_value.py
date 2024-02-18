@@ -1,7 +1,7 @@
 import unittest,io,sys
 from get_stand_in_data import select_data_value
 
-class TestTempFunctions(unittest.TestCase):
+class TestSelectDataValueFunction(unittest.TestCase):
     
     def test_valid_arguments(self):
         valid_arguments = ["test_data_1","test_data_2","test_data_3","test_data_4"]
@@ -15,7 +15,7 @@ class TestTempFunctions(unittest.TestCase):
 
     def test_invalid_argument(self):
         invalid_argument = "invalid_argument_name"
-        fake_argv_list = ["main.py", invalid_argument]
+        fake_argv_list = ["main.py", invalid_argument, "test"]
         return_string = None
         
         captured_output = io.StringIO()        
