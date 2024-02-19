@@ -36,4 +36,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with unittest
         run: |
-          python test_select_data_value.py
+          python app/data_collection/test_select_data_value.py
