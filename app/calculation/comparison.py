@@ -1,14 +1,14 @@
 import random
 
-def get_emissions_comparison_text(jet_emission):
+def get_emissions_comparison_text(metric_tons_co2_emitted):
   comparisons = ['tree_comparison', 'LA_NY_drive_comparison', 'average_american_emissions_comparison']
   selection = random.choice(comparisons)
   if selection == 'tree_comparison':
-    #calculating how many trees are needed to absorb jet_emission
+    #calculating how many trees are needed to absorb metric_tons_co2_emitted
     #from arbor day foundation: a mature tree absorbs 48 lbs CO2 per year = 0.02 mt CO2
    
     annual_tree_absorption_mt = 0.02
-    trees_needed = jet_emission/annual_tree_absorption_mt
+    trees_needed = metric_tons_co2_emitted/annual_tree_absorption_mt
     trees_needed = int(trees_needed)
     tree_output = f"It will take {trees_needed} trees approximately 1 year to remove this CO2 from the atmosphere."
     
@@ -19,7 +19,7 @@ def get_emissions_comparison_text(jet_emission):
     #Assumptions: compact car, using E10 fuel, there are 3,396 km between LA and NY
     
     trip_emissions_mt = 0.997
-    trips_needed = jet_emission/trip_emissions_mt
+    trips_needed = metric_tons_co2_emitted/trip_emissions_mt
     trips_needed = int(trips_needed)
     trip_output = f"You would have to drive from LA to NY {trips_needed} times to emit this same amount."
     
@@ -30,7 +30,7 @@ def get_emissions_comparison_text(jet_emission):
     #an average american emits 16 tons CO2 every year = 14.5 mt
     
     american_emissions_mt = 14.5
-    years_needed = jet_emission/american_emissions_mt
+    years_needed = metric_tons_co2_emitted/american_emissions_mt
     if years_needed <1:
       months_needed = years_needed * 12
       months_needed = int(months_needed)
