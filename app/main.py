@@ -23,7 +23,7 @@ metric_tons_co2_emitted = calculate_emissions(km_traveled)
 comparison_text = get_emissions_comparison_text(metric_tons_co2_emitted)
 
 # build the full post text
-post_text = f'TEST - {name} just flew {km_traveled} km in their private jet, emitting {metric_tons_co2_emitted} metric tons of CO₂ into the atmosphere. ' + comparison_text
+post_text = f'TEST - {name} just flew {km_traveled} km in their private jet, emitting {metric_tons_co2_emitted} metric ton{ "" if metric_tons_co2_emitted == 1 else "s" } of CO₂ into the atmosphere. ' + comparison_text
 
 # post it to x
 post_to_x(post_text)
