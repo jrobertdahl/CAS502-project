@@ -4,6 +4,6 @@ def calculate_emissions(km_traveled):
 # 4.9 kg per mile = 0.003045 mt per km
 
     average_metric_tons_co2_emitted_per_km = 0.003045
-    metric_tons_co2_emitted = average_metric_tons_co2_emitted_per_km * km_traveled
+    metric_tons_co2_emitted = round(average_metric_tons_co2_emitted_per_km * km_traveled, 2)
 
     return metric_tons_co2_emitted
