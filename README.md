@@ -14,7 +14,7 @@ If you are using this code and come across any bugs, please feel free to report 
 
 If you would like to commit to this repository, please feel free to create your own fork. Pull Requests from forked branches will be reviewed thoroughly before merging.
 
-## User Instructions
+## Installation Instructions
 
 Make sure you have [Docker](https://www.docker.com/get-started/) installed. In the root directory of the project, run `docker build .`.
 
@@ -22,4 +22,19 @@ Then run `docker images` and copy the ID of the image you've just created.
 
 Finally, run `docker run -it --mount type=bind,source=${PWD},target=/project IMAGEID_GOES_HERE bash` to create the container.
 
-This will bind your local /app directory with the /app directory in the container and present you with a bash shell within the Docker container. From there, change directories to /app and run `python main.py`.
+This will bind your local /app directory with the /app directory in the container and present you with a bash shell within the Docker container.
+
+## User Instructions
+
+In the Docker bash shell, navigate to the /app folder.
+
+The current iteration of this software runs on stand-in data and allows the user to specify which test data to run the script with. Valid arguments are:
+
+- test_data_1
+- test_data_2
+- test_data_3
+- test_data_4
+  
+A command that specifies which data object to use would look like this: `pythong main.py test_data_1`. Alternatively, if no arugment is supplied, the program will select from the four options at random. If the script is successful, it will output the unique URL of the X/twitter post created.
+
+Note: because X/twitter does not allow word-for-word duplicate posts, each execution of the script has a chance of failing if the post text generated is the same as an existing post.
