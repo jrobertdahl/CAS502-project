@@ -8,6 +8,12 @@ The goal of this project is to raise awareness of the level of carbon emissions 
 
 A “nice-to-have” bit of additional functionality would include a comparison to a more relatable form of carbon emission. An example social media post might read: “Warren Buffet just put 45 tons of CO2 into the atmosphere flying from Omaha to Nashville. That’s the equivalent of driving from Los Angeles to New York 3 times.”
 
+## Bug reports and contributions
+
+If you are using this code and come across any bugs, please feel free to report them by creating an issue in Github and applying the "bug" label.
+
+If you would like to commit to this repository, please feel free to create your own fork. Pull Requests from forked branches will be reviewed thoroughly before merging.
+
 ## Docker Instructions
 
 In the root directory, run `docker build .`.
