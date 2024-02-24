@@ -1,8 +1,8 @@
 import tweepy
 import json
-# set up docker to install tweepy
 
 def post_to_x(post_text):
+    # the keys in x_auth.json are currently associated with https://twitter.com/CAS502_Project
     with open('posting/x_auth.json') as json_file:
         auth_keys = json.load(json_file)
     

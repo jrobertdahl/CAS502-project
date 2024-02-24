@@ -3,6 +3,7 @@ import requests
 
 url = "https://adsbexchange-com1.p.rapidapi.com/v2/registration/N8737L/"
 
+# these are demo API keys on rapidapi.com
 headers = {
 	"X-RapidAPI-Key": "f32fdda07amsh1e0587bbdf16af4p19e04ejsn1d49db0c5cdf",
 	"X-RapidAPI-Host": "adsbexchange-com1.p.rapidapi.com"
