@@ -35,6 +35,6 @@ The current iteration of this software runs on stand-in data and allows the user
 - test_data_3
 - test_data_4
   
-A command that specifies which data object to use would look like this: `pythong main.py test_data_1`. Alternatively, if no arugment is supplied, the program will select from the four options at random. If the script is successful, it will output the unique URL of the X/twitter post created.
+A command that specifies which data object to use would look like this: `python main.py test_data_1`. Alternatively, if no arugment is supplied, the program will select from the four options at random. If the script is successful, it will output the unique URL of the X/twitter post created.
 
 Note: because X/twitter does not allow word-for-word duplicate posts, each execution of the script has a chance of failing if the post text generated is the same as an existing post.
