@@ -14,12 +14,12 @@ If you are using this code and come across any bugs, please feel free to report 
 
 If you would like to commit to this repository, please feel free to create your own fork. Pull Requests from forked branches will be reviewed thoroughly before merging.
 
-## Docker Instructions
+## User Instructions
 
-In the root directory, run `docker build .`.
+Make sure you have [Docker](https://www.docker.com/get-started/) installed. In the root directory of the project, run `docker build .`.
 
 Then run `docker images` and copy the ID of the image you've just created.
 
 Finally, run `docker run -it --mount type=bind,source=${PWD},target=/project IMAGEID_GOES_HERE bash` to create the container.
 
-This will bind your local /app directory with the /app directory in the container.
+This will bind your local /app directory with the /app directory in the container and present you with a bash shell within the Docker container. From there, change directories to /app and run `python main.py`.
