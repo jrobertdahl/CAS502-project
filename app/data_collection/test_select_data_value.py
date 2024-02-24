@@ -18,11 +18,13 @@ class TestSelectDataValueFunction(unittest.TestCase):
         fake_argv_list = ["main.py", invalid_argument, "test"]
         return_string = None
         
+        # temporarily rerouting print output to a variable to confirm user recieves feedback message
         captured_output = io.StringIO()        
         sys.stdout = captured_output
 
         return_string = select_data_value(fake_argv_list)
         
+        # setting output back to the standard system output so the test can continue
         sys.stdout = sys.__stdout__
 
         self.assertEqual(return_string, None)
