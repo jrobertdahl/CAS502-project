@@ -1,3 +1,6 @@
+# This function is taking the km traveled by a jet and converting it to metric tons of CO2 emitted into the atmosphere. It assumes
+# that all people are flying the same jet
+
 def calculate_emissions(km_traveled):
 
 #source: [https://flybitlux.com/what-is-the-carbon-footprint-of-a-private-jet/]
