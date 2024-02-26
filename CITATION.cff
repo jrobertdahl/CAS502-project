@@ -1,1 +1,13 @@
 jrobertdahl, & scm929. (2024). jrobertdahl/CAS502-project: 0.9 - Initial Release (0.9). Zenodo. https://doi.org/10.5281/zenodo.10703224
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Dahl"
+  given-names: "Jason"
+- family-names: "McConnell"
+  given-names: "Sophia"
+title: "jrobrtdahl/CAS502-project"
+version: 0.9
+doi: https://doi.org/10.5281/zenodo.10703224
+date-released: 2024-02-25
+url: "https://github.com/jrobertdahl/CAS502-project"
